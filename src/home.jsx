@@ -8,7 +8,6 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 function home() {
   return (
    <div>
-    <BrowserView>
       <div className='home' id='home'>
         <Greeting/>
         <Image/>
@@ -16,10 +15,6 @@ function home() {
       <div className='link-containter'>
         <Links/>
       </div>
-    </BrowserView>
-    <MobileView>
-      This is a test
-    </MobileView>
   </div>
   )
 }
