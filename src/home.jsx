@@ -3,17 +3,23 @@ import profile_pic from './images/profile.png'
 import {LiaLinkedin} from 'react-icons/lia'
 import {BiLogoInstagram} from 'react-icons/bi'
 import {FaGithubSquare} from 'react-icons/fa'
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect'
 
 function home() {
   return (
    <div>
-    <div className='home' id='home'>
-      <Greeting/>
-      <Image/>
-    </div>
-    <div className='link-containter'>
-      <Links/>
-    </div>
+    <BrowserView>
+      <div className='home' id='home'>
+        <Greeting/>
+        <Image/>
+      </div>
+      <div className='link-containter'>
+        <Links/>
+      </div>
+    </BrowserView>
+    <MobileView>
+      This is a test
+    </MobileView>
   </div>
   )
 }
