@@ -1,0 +1,86 @@
+.home{
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  transition: 1s ease-in;
+  overflow: hidden;
+}
+
+.home-container{
+  height: 100%;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 5rem;
+}
+
+.home .home-icon{
+  
+  width: 250px;
+  height: auto;
+  padding-top: 1.5rem;
+}
+
+.home .home-icon:hover{
+  width: 250px;
+  height: auto;
+  will-change: filter;
+  transition: filter 300ms;
+  filter: drop-shadow(0 0 1.5em #646cffaa);
+}
+
+.typed-out{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 60px;
+  width: 0;
+  padding-left: 10px;
+  overflow: hidden;
+  border-right: .15em solid;
+  white-space: nowrap;
+  animation: 
+    typing 1s steps(12, end) forwards,
+    cursor .8s infinite;
+}
+
+.link-menu {
+  margin: 0;
+  list-style: none;
+}
+
+.link-item{
+  display: inline-block;
+  padding: 4rem;
+  padding-top: 8rem;
+}
+
+.link-item:nth-child(1){
+  padding-left: 1rem;
+}
+
+.link-item a{
+  text-decoration: none;
+  color: white;
+}
+
+.link-item a:hover{
+  text-decoration: none;
+  color: white;
+  border-bottom: 5px solid;
+}
+
+
+
+
+
+
+
+@keyframes typing{
+  from {width: 0%}
+  to {width: 100%}
+}
+/*cursor blinking*/
+@keyframes cursor{
+  from {border-color: transparent;}
+  to {border-color: white;}
+}

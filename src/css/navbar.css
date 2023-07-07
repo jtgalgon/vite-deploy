@@ -1,0 +1,67 @@
+.header {
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #242424;
+  transition: .3s ease-out;
+  z-index: 9999999;
+}
+
+.header-hidden{
+  transition: .3s ease-in;
+  display: none;
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #242424;
+  
+}
+
+.header .navbar {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  margin: auto;
+  height: 100%;
+}
+
+.header .nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header .nav-item a:hover {
+  border-bottom: 3px solid #ffffff;
+}
+
+.header .nav-item .active{
+  border-bottom: 3px solid #ffffff;
+  transition: .1s ease-in;
+}
+
+.header .nav-menu {
+  list-style: none;
+  text-align: center;
+}
+
+.header .nav-item:nth-child(1){
+  padding-left: 30px;
+}
+
+.header .nav-menu .nav-item{
+  display: inline-block;
+}
+
+.header .nav-item {
+  padding: 4rem;
+  padding-top: 1rem;
+}
+
+.navbar-hidden{
+  transition: 300ms ease-in;
+  display: none;
+}
