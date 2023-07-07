@@ -34,11 +34,6 @@
     cursor .8s infinite;
 }
 
-.link-menu {
-  margin: 0;
-  list-style: none;
-}
-
 .link-item{
   display: inline-block;
   padding: 2rem;
@@ -47,7 +42,6 @@
 .link-containter{
   padding-top: 2rem;
   text-align: center;
-  padding-right: 2rem;
 }
 
 .link-item a{
