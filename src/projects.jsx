@@ -10,6 +10,7 @@ import PCAImage from './images/PCA.jpg'
 
 function projects() {
   return (
+    /* 
     <div className='projects' id='projects'>
       <h1>Projects.</h1>
       <div className='projects-container'>
@@ -36,6 +37,8 @@ function projects() {
         </Fade>
       </div>
     </div>
+    */
+   <>Page 2</>
   )
 }
 

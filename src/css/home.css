@@ -1,25 +1,16 @@
 .home{
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
-  transition: 1s ease-in;
-  overflow: hidden;
+  padding-top: 6rem;
+  display: inline-block;
 }
 
-.home-container{
-  height: 100%;
-  display: inline-block;
-  justify-content: center;
-  text-align: center;
-  vertical-align: middle;
-  margin-top: 5rem;
+.icon-container{
+  text-align: center; /*keeps image aligned*/
 }
 
 .home .home-icon{
-  
+  padding-top: 4rem;
   width: 250px;
   height: auto;
-  padding-top: 1.5rem;
 }
 
 .home .home-icon:hover{
@@ -50,12 +41,13 @@
 
 .link-item{
   display: inline-block;
-  padding: 4rem;
-  padding-top: 8rem;
+  padding: 2rem;
 }
 
-.link-item:nth-child(1){
-  padding-left: 1rem;
+.link-containter{
+  padding-top: 2rem;
+  text-align: center;
+  padding-right: 2rem;
 }
 
 .link-item a{
@@ -68,11 +60,6 @@
   color: white;
   border-bottom: 5px solid;
 }
-
-
-
-
-
 
 
 @keyframes typing{

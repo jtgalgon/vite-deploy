@@ -6,37 +6,36 @@ import {FaGithubSquare} from 'react-icons/fa'
 
 function home() {
   return (
+   <div>
     <div className='home' id='home'>
-      <div className='home-container'>
-        <Greeting className='home-section'/>
-        <Image className='home-section'/>
-        <Links className='home-section'/>
-      </div>
+      <Greeting/>
+      <Image/>
     </div>
-    
+    <div className='link-containter'>
+      <Links/>
+    </div>
+  </div>
   )
 }
 
 function Image(){
   return(
+    <div className='icon-container'>
       <img className='home-icon' src={profile_pic} alt="profile" />
-
+    </div>
   )
 }
 
 function Greeting(){
   return(
-    <div className='typed-out'>
-      Joshua Galgon.
-    </div>
+    <div className='typed-out'>Joshua Galgon.</div>
   )
 }
 
 function Links(){
   const icon_size = 60
-
   return(
-    <div className='link-container'>
+    <div>
       <nav className='navbar'>
         <ul className='link-menu'>
           <li className='link-item'>
