@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar{
-  /*display: none;*/
+  display: none;
 }
 
 .app-container {
@@ -20,7 +20,18 @@
   scroll-snap-type: y mandatory;
 }
 
-.app-page {
+.mobile-app-page {
+  width: 100%;
+  padding: 1rem;
+  height: 700px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color:white;
+}
+.browser-app-page {
   width: 100%;
   padding: 1rem;
   height: 940px;
@@ -32,14 +43,14 @@
   color:white;
 }
 
-.app-page:nth-child(1) {
+.browser-app-page:nth-child(1), .mobile-app-page:nth-child(1) {
   background-color: red;
 }
 
-.app-page:nth-child(2) {
+.browser-app-page:nth-child(2), .mobile-app-page:nth-child(2) {
   background-color: blue;
 }
 
-.a:nth-child(3) {
+.browser-app-page:nth-child(3), .mobile-app-page:nth-child(3) {
   background-color: orangered;
 }

@@ -3,7 +3,7 @@ import profile_pic from './images/profile.png'
 import {LiaLinkedin} from 'react-icons/lia'
 import {BiLogoInstagram} from 'react-icons/bi'
 import {FaGithubSquare} from 'react-icons/fa'
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect'
+import {isMobile} from 'react-device-detect'
 
 function home() {
   return (
@@ -12,7 +12,7 @@ function home() {
         <Greeting/>
         <Image/>
       </div>
-      <div className='link-containter'>
+      <div className={isMobile ? 'mobile-link-container' : 'browser-link-containter'}>
         <Links/>
       </div>
   </div>
@@ -22,34 +22,40 @@ function home() {
 function Image(){
   return(
     <div className='icon-container'>
-      <img className='home-icon' src={profile_pic} alt="profile" />
+      <img className={isMobile ? 'mobile-home-icon' : 'browser-home-icon'} src={profile_pic} alt="profile" />
     </div>
   )
 }
 
 function Greeting(){
   return(
-    <div className='typed-out'>Joshua Galgon.</div>
+    <div className={isMobile ? 'mobile-typed-out' : 'browser-typed-out'}>Joshua Galgon.</div>
   )
 }
 
 function Links(){
-  const icon_size = 60
+  let icon_size = 0
+  if(isMobile){
+    icon_size = 60
+  }else{
+    icon_size = 60
+  }
+  console.log(isMobile)
   return(
     <div>
       <nav className='navbar'>
-        <ul className='link-menu'>
-          <li className='link-item'>
+        <ul className={isMobile ? 'mobile-link-menu' : 'browser-link-menu'}>
+          <li className={isMobile ? 'mobile-link-item' : 'browser-link-item'}>
             <a href="https://www.linkedin.com/in/joshua-galgon-87b156233/">
               <LiaLinkedin size={icon_size}/>
             </a>
           </li>
-          <li className='link-item'>
+          <li className={isMobile ? 'mobile-link-item' : 'browser-link-item'}>
             <a href="https://www.instagram.com/j.galgon">
               <BiLogoInstagram size={icon_size}/>
             </a>
           </li>
-          <li className='link-item'>
+          <li className={isMobile ? 'mobile-link-item' : 'browser-link-item'}>
             <a href="https://github.com/jtgalgon">
               <FaGithubSquare size={icon_size}/>
             </a>

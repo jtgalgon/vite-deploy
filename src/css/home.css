@@ -7,13 +7,19 @@
   text-align: center; /*keeps image aligned*/
 }
 
-.home .home-icon{
+.home .browser-home-icon{
   padding-top: 4rem;
   width: 250px;
   height: auto;
 }
 
-.home .home-icon:hover{
+.home .mobile-home-icon{
+  padding-top: 1.5rem;
+  width: 200px;
+  height: auto;
+}
+
+.home .browser-home-icon:hover{
   width: 250px;
   height: auto;
   will-change: filter;
@@ -21,7 +27,28 @@
   filter: drop-shadow(0 0 1.5em #646cffaa);
 }
 
-.typed-out{
+.home .mobile-home-icon:hover{
+  width: 200px;
+  height: auto;
+  will-change: filter;
+  transition: filter 300ms;
+  filter: drop-shadow(0 0 1em #646cffaa);
+}
+
+.mobile-typed-out{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 37px;
+  width: 0;
+  /*padding left: 10px*/
+  overflow: hidden;
+  border-right: .12em solid;
+  white-space: nowrap;
+  animation: 
+    typing 1s steps(12, end) forwards,
+    cursor .8s infinite;
+}
+
+.browser-typed-out{
   font-family: 'Roboto Mono', monospace;
   font-size: 60px;
   width: 0;
@@ -34,22 +61,44 @@
     cursor .8s infinite;
 }
 
-.link-item{
+.mobile-link-item{
+  display: block;
+  text-align: center;
+  padding-top: 10px ;
+}
+
+.browser-link-item{
   display: inline-block;
   padding: 2rem;
 }
 
-.link-containter{
+.mobile-link-containter{
   padding-top: 2rem;
   text-align: center;
 }
 
-.link-item a{
+.browser-link-containter{
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.mobile-link-item a{
   text-decoration: none;
   color: white;
 }
 
-.link-item a:hover{
+.browser-link-item a{
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-link-item a:hover{
+  text-decoration: none;
+  color: white;
+  border-bottom: 4px solid;
+}
+
+.browser-link-item a:hover{
   text-decoration: none;
   color: white;
   border-bottom: 5px solid;
