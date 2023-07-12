@@ -9,6 +9,7 @@ import {isMobile} from 'react-device-detect'
 function App() {
   return (
     <div className='app-container'>
+      <Navbar/>
       <div className={isMobile ? 'mobile-app-page' : 'browser-app-page'}>
         <Home/>
       </div>

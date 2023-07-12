@@ -4,13 +4,18 @@ import {LiaLinkedin} from 'react-icons/lia'
 import {BiLogoInstagram} from 'react-icons/bi'
 import {FaGithubSquare} from 'react-icons/fa'
 import {isMobile} from 'react-device-detect'
+import Fade from 'react-reveal/Fade'
+import React, { useState, useRef} from 'react';
+
 
 function home() {
   return (
    <div>
       <div className='home' id='home'>
         <Greeting/>
-        <Image/>
+        <Fade>
+          <Image/>
+        </Fade>
       </div>
       <div className={isMobile ? 'mobile-link-container' : 'browser-link-containter'}>
         <Links/>
@@ -45,7 +50,9 @@ function Links(){
     <div>
       <nav className='navbar'>
         <ul className={isMobile ? 'mobile-link-menu' : 'browser-link-menu'}>
+          <Fade bottom>
           <li className={isMobile ? 'mobile-link-item' : 'browser-link-item'}>
+            
             <a href="https://www.linkedin.com/in/joshua-galgon-87b156233/">
               <LiaLinkedin size={icon_size}/>
             </a>
@@ -60,6 +67,7 @@ function Links(){
               <FaGithubSquare size={icon_size}/>
             </a>
             </li>
+            </Fade>
       </ul>
       </nav>
     </div>

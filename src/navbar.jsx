@@ -1,20 +1,18 @@
 import './css/navbar.css'
 import {Link} from 'react-scroll'
-
-
 function navbar() {
   return (
     <div className='header'>
       <nav className='navbar'>
         <ul className='nav-menu'>
           <li className='nav-item'>
-            <Link to="home" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
+            <a href="#home">Home</a>
           </li>
           <li className='nav-item'>
-            <Link to="projects" spy={true} smooth={true} offset={-90} duration={500}>About</Link>
+            <a href="#projects">Projects</a>
           </li>
           <li className='nav-item'>
-            <Link to="contact" spy={true} smooth={true} offset={-110} duration={500}>Contact</Link>
+            <a href='#contact'>Contact</a>
           </li>
         </ul>
       </nav>

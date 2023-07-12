@@ -23,7 +23,7 @@
 .mobile-app-page {
   width: 100%;
   padding: 1rem;
-  height: 700px;
+  height: 650px;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   position: relative;
@@ -43,14 +43,15 @@
   color:white;
 }
 
-.browser-app-page:nth-child(1), .mobile-app-page:nth-child(1) {
+.browser-app-page:nth-child(2), .mobile-app-page:nth-child(1) {
   background-color: red;
+  height: 650px;
 }
 
-.browser-app-page:nth-child(2), .mobile-app-page:nth-child(2) {
+.browser-app-page:nth-child(3), .mobile-app-page:nth-child(2) {
   background-color: blue;
 }
 
-.browser-app-page:nth-child(3), .mobile-app-page:nth-child(3) {
+.browser-app-page:nth-child(4), .mobile-app-page:nth-child(3) {
   background-color: orangered;
 }

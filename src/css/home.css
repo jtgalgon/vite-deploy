@@ -1,5 +1,5 @@
 .home{
-  padding-top: 6rem;
+  padding-top: 3rem;
   display: inline-block;
 }
 
@@ -8,13 +8,12 @@
 }
 
 .home .browser-home-icon{
-  padding-top: 4rem;
   width: 250px;
   height: auto;
 }
 
 .home .mobile-home-icon{
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   width: 200px;
   height: auto;
 }
@@ -39,7 +38,6 @@
   font-family: 'Roboto Mono', monospace;
   font-size: 37px;
   width: 0;
-  /*padding left: 10px*/
   overflow: hidden;
   border-right: .12em solid;
   white-space: nowrap;
@@ -52,7 +50,6 @@
   font-family: 'Roboto Mono', monospace;
   font-size: 60px;
   width: 0;
-  padding-left: 10px;
   overflow: hidden;
   border-right: .15em solid;
   white-space: nowrap;
@@ -70,6 +67,7 @@
 .browser-link-item{
   display: inline-block;
   padding: 2rem;
+  padding-top: 1rem;
 }
 
 .mobile-link-containter{
@@ -78,7 +76,6 @@
 }
 
 .browser-link-containter{
-  padding-top: 2rem;
   text-align: center;
 }
 

@@ -1,53 +1,33 @@
 .projects{
   font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
+  display:inline-block;
+  justify-content: center;
 }
 
-h1{
-  margin-top: 8rem;
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.projects-container{
-  font-size: 20px;
+.projects .browser-h1{
+  font-size: 50px;
+  margin-top: 3rem;
   text-align: center;
 }
 
-.projects-section{
-  border-radius: 25px;
-  background-color: black;
-  display: inline-block;
-  justify-content: center;
-  margin: 30px;
-}
-
-.projects-section:hover{
-  will-change: filter;
-  transition: filter 300ms;
-  filter: drop-shadow(0 0 1.5em white);
-  border-radius: 25px;
-  background-color: black;
-  display: inline-block;
-  justify-content: center;
-  margin: 30px;
-}
-
-p{
-  padding-left: 10rem;
-  text-align: center;
-  display: block;
-  justify-content: center;
-  inline-size: 220px;
-  font-size: 16px;
-  height: 100%;
-  margin-bottom: 1rem;
-
-}
-
-.project-images{
-  width: 500px;
+.browser-projects-container{
+  max-width: 600px;
+  min-width: 525px;
   height: auto;
-  padding-right: 1rem;
+  
 }
+
+.balls{
+  border: 5px solid;
+}
+
+.projects h3{
+  text-align: center;
+}
+
+
+
+
+
+
 
