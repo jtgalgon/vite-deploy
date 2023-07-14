@@ -1,5 +1,4 @@
 import './css/navbar.css'
-import {Link} from 'react-scroll'
 function navbar() {
   return (
     <div className='header'>

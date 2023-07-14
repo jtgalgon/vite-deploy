@@ -31,10 +31,11 @@
   justify-content: center;
   color:white;
 }
+
 .browser-app-page {
+  height: 940px;
   width: 100%;
   padding: 1rem;
-  height: 940px;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   position: relative;
@@ -45,11 +46,11 @@
 
 .browser-app-page:nth-child(2), .mobile-app-page:nth-child(1) {
   background-color: red;
-  height: 650px;
 }
 
 .browser-app-page:nth-child(3), .mobile-app-page:nth-child(2) {
   background-color: blue;
+  height: 2500px;
 }
 
 .browser-app-page:nth-child(4), .mobile-app-page:nth-child(3) {
